@@ -1,15 +1,13 @@
 // Write your code in this file!
 
 function scuberGreetingForFeet (feet) {
-  let result
   if (feet <= 400) {
-    result = "This one is on me!";
+    return "This one is on me!";
   } else if (feet > 400 && feet <= 2500) {
-    result = "I will gladly take your thirty bucks.";
+    return "I will gladly take your thirty bucks.";
   } else {
-    result = "No can do.";
+    return "No can do.";
   {
-  return result
 }
 
 function ternaryCheckCity(city) {

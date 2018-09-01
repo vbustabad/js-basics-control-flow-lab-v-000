@@ -4,33 +4,31 @@ function scuberGreetingForFeet(ride) {
   let result
   if (ride <= 400) {
     result = "This one is on me!";
-  } else if (ride > 2000) {
+  } else if (ride > 2000 && ride < 2500) {
     result = "I will gladly take your thirty bucks.";
-  } else if (ride > 2500) {
+  } else {
     result = "No can do.";
-  {
+  }
   return result
 }
 
 function ternaryCheckCity(city) {
   let result
-  if (city === "NYC") {
-    result = "Ok, sounds good.";
-  } else {
-    result = "No go.";
-  }
+  result = (city === "NYC" ? "Ok, sounds good." : "No go.");
   return result
 }
 
 function switchOnCharmFromTip(tip) {
   let result
-  if (tip === "generous") {
-    result = "Thank you so much.";
-  } else if (ride > 2000) {
-    result = "Thank you.";
-  }
-  else {
-    result = "Bye.";
+  switch (tip) {
+    case "generous":
+      result = "Thank you so much.";
+      break;
+    case "not as generous":
+      result = "Thank you.";
+      break;
+    default:
+      result = "Bye.";
   }
   return result
 }

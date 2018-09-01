@@ -15,13 +15,13 @@ function ternaryCheckCity(city) {
 }
 
 function switchOnCharmFromTip(tip) {
-  let result
-  if (tip === "generous") {
-    result = "Thank you so much.";
-  } else if (ride > 2000) {
-    result = "Thank you.";
-  }
-  else {
-    result = "Bye.";
-  }
-  return result
+  switch (tip)
+    case "generous":
+      "Thank you so much.";
+      break;
+    case "not as generous":
+      "Thank you.";
+      break;
+    default:
+      "Bye.";
+}

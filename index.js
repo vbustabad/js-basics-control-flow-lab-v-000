@@ -33,4 +33,3 @@ function switchOnCharmFromTip(tip) {
     result = "Bye.";
   }
   return result
-}

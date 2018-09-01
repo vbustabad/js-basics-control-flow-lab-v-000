@@ -1,13 +1,15 @@
 // Write your code in this file!
 
 function scuberGreetingForFeet(ride) {
+  let result
   if (ride <= 400) {
-    return "This one is on me!";
+    result = "This one is on me!";
   } else if (ride > 2000 && ride < 2500) {
-    return "I will gladly take your thirty bucks.";
+    result = "I will gladly take your thirty bucks.";
   } else {
-    return "No can do.";
+    result = "No can do.";
   }
+  return result
 }
 
 function ternaryCheckCity(city) {

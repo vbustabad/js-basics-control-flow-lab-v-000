@@ -1,10 +1,10 @@
 // Write your code in this file!
 
-function scuberGreetingForFeet(ride) {
+function scuberGreetingForFeet(feet) {
   let result
-  if (ride <= 400) {
+  if (feet <= 400) {
     result = "This one is on me!";
-  } else if (ride > 400 && ride <= 2500) {
+  } else if (feet > 400 && feet <= 2500) {
     result = "I will gladly take your thirty bucks.";
   } else {
     result = "No can do.";
